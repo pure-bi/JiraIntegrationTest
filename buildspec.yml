@@ -1,0 +1,24 @@
+rversion: 0.2
+service: hackernoon-test
+
+provider:
+  name: aws
+  runtime: 14
+
+functions:
+  hello:
+    handler: app.handler
+    events:
+      - http:
+          path: hello
+          method: get
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      - npm install -g
+      - npm install -g serverless
+      - echo "Done!!!!!!"
+artifacts:
+   files:
+    - '*/'
