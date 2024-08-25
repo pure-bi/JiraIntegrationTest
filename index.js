@@ -8,4 +8,4 @@ exports.handler = async (event, context) => {
     };
     return response;
 }, 
-exports.sum = (a, b) => { return a + b+1; }   
+exports.sum = (a, b) => { return a + b; }   
