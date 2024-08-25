@@ -1,8 +1,5 @@
 rversion: 0.2
-service: hackernoon-test
-
 provider:
-  name: aws
   runtime: 14
 
 functions:
