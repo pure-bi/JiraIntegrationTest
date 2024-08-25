@@ -7,4 +7,5 @@ exports.handler = async (event, context) => {
         body: 'Hello World\n',
     };
     return response;
-};
+}, 
+exports.sum = (a, b) => { return a + b+1; }   
